@@ -1,28 +1,30 @@
-body{
-    background: linear-gradient(135deg, #6bb3f2, #9333ea);
-    margin: 0;
+* {
+    box-sizing: border-box;
+    margin : 0;
     padding: 0;
-    height: 100vh;
-}
-
-main{
-    text-align: center;
-    padding: 0 5vw;
-}
-
-main img {
-    max-width: 100%;
-    height: auto;
-    width: 80vw;
-    max-width: 500px;
+    font-family: "PT Serif", serif;
 }
 
 #Headers{
+    text-align: center;
+    padding: 30px 0 10px 0;
+    font-size: clamp(1rem, 10vw, 5rem);   
+}
+
+#ArImage{
+    display: block;
+    margin: 0 auto;
+    width: clamp(200px, 70vw, 800px); 
+    padding-bottom: 60px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#Subheaders{
+    text-align: justify;
+    font-size: clamp(0.8rem, 5vw, 2rem);
+    padding: 0 30px 30px 30px;
+    text-justify: inter-word;
     
-    font-family: "PT Serif", serif;
-    font-size: clamp(2rem, 8vw, 5em);
-    margin-top: 10vh;
-    color: #f5f5f5;
 }
 
 section{
@@ -30,78 +32,28 @@ section{
 }
 
 #button{
-    font-size: clamp(1.2rem, 5vw, 3em);
-    margin: 10px;
-    margin-top: 3vh;
-    background: #252559;
-    color: #ffffff;
+    background-color: #1b91eb;
     border: none;
-    border-radius: 10px;
-    padding: clamp(10px, 3vw, 20px) clamp(20px, 6vw, 40px);
-    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: clamp(0.8rem, 4vw, 2rem);
+    border-radius: 12px;
     cursor: pointer;
 }
 
-section ul{
+.cta h5{
+    font-size: clamp(1rem, 5vw, 2rem);
+    margin-bottom: 10px;
+}
+
+#links{
     list-style-type: none;
-    padding: 0;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
-    gap: clamp(10px, 3vw, 20px);
-    margin-top: 5vh;
-    text-decoration: none;
-    flex-wrap: wrap;
+    gap: 10px;
+    font-size: clamp(0.5rem, 5vw, 1rem);
 }
-
-section ul a, p{
-    text-decoration: none;
-    color: #e0e0e0;
-    font-size: clamp(0.9rem, 3vw, 1.5rem);
-}
-
-#Subheaders {
-    font-size: clamp(1rem, 4vw, 2rem);
-    padding: 0 5vw;
-}
-
-#flavo {
-    background: linear-gradient(90deg, #1e3a8a, #6d28d9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-}
-.signup_div {
-    text-align: center;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    width: 200px;
-    margin: 100px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.signup_div input[type="text"],
-.signup_div input[type="email"],
-.signup_div input[type="password"] {
-    width: 90%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-#signup_button {
-    font-size: 1em;
-    margin: 10px;
-    margin-top: 20px;
-    background: #252559;
-    color: #ffffff;
-    border: none;
-    border-radius: 10px;
-    padding: 12px 24px;
-    font-weight: bold;
-}
-
