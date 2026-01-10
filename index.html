@@ -12,20 +12,26 @@
 <body>
     <main>
         <h1 id="Headers">Welcome to <br><span id="flavo">FlavoAR</span></h1>
-        <img src="img/Ar.jpg" alt="AR Image">
-        <p id="Subheaders">Your gateway to augmented reality flavors!</p>
+        <p id="Subheaders">View restaurant dishes in augmented reality before you decide what to eat. Used by restaurants to enhance customer experience.</p>
+        <img id="ArImage" src="img/Ar.jpg" alt="AR Image">
     </main>
 
     <section>
-        <a href="html/login.html" id="start">
-            <button id="button">Get Started</button>
-        </a>
+        <div class="cta">
+            <h5>Try FlavoAR now!</h5>
+            <a href="html/login.html" id="start">
+                <button id="button">Get Started</button>
+            </a>
+        </div>
+        
 
-        <ul>
-            <a href=""><li>About us</li></a>
-            <a href="https://www.facebook.com/"><li>Facebook</li></a>
+        <ul id="links">
+            <li><a href="">About us</a></li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
         </ul>
     </section>
+
+    <script src="js/script.js"></script>
 
 </body>
 
