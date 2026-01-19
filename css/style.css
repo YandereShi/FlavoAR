@@ -1,59 +1,58 @@
-* {
-    box-sizing: border-box;
-    margin : 0;
+*{
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "PT Serif", serif;
 }
 
-#Headers{
-    text-align: center;
-    padding: 30px 0 10px 0;
-    font-size: clamp(1rem, 10vw, 5rem);   
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#ArImage{
-    display: block;
-    margin: 0 auto;
-    width: clamp(200px, 70vw, 800px); 
-    padding-bottom: 60px;
+.header-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#ArImage {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: opacity 0.5s ease-in-out;
 }
-
-#Subheaders{
-    text-align: justify;
-    font-size: clamp(0.8rem, 5vw, 2rem);
-    padding: 0 30px 30px 30px;
-    text-justify: inter-word;
-    
-}
-
-section{
-    text-align: center;
-}
-
-#button{
-    background-color: #1b91eb;
-    border: none;
-    color: rgb(255, 255, 255);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: clamp(0.8rem, 4vw, 2rem);
-    border-radius: 12px;
-    cursor: pointer;
-}
-
-.cta h5{
-    font-size: clamp(1rem, 5vw, 2rem);
-    margin-bottom: 10px;
-}
-
-#links{
-    list-style-type: none;
-    padding-top: 50px;
+.How-container{
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    font-size: clamp(0.5rem, 5vw, 1rem);
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid black;
+    gap: 0.5rem;
+}
+
+
+.How-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.buttons{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #3983f3;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em
 }
